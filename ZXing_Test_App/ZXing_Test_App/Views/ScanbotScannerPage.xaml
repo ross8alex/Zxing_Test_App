@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="ZXing_Test_App.Views.ScanbotScannerPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ZXing_Test_App.Views">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#e2e2e2"
+                     Spacing="0">
+            <!--<Frame Padding="16"
+                   BackgroundColor="#c8193c"
+                   CornerRadius="0"
+                   HasShadow="False">
+                <StackLayout HorizontalOptions="FillAndExpand"
+                             Orientation="Horizontal">
+                    <Label FontSize="18"
+                           HorizontalTextAlignment="Start"
+                           Text="Barcode Scanner Example"
+                           TextColor="White"
+                           VerticalOptions="Center" />
+                    <ImageButton x:Name="infoButton"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="24"
+                                 HorizontalOptions="EndAndExpand"
+                                 Source="ic_info.png"
+                                 VerticalOptions="Center"
+                                 WidthRequest="24" />
+                </StackLayout>
+            </Frame>-->
+
+            <local:BarcodeCameraView x:Name="cameraView"
+                                     BackgroundColor="#1f1f1f"
+                                     HeightRequest="250" />
+
+            <!--<StackLayout x:Name="buttonsLayout">
+                <BoxView Style="{StaticResource Separator}" />
+                <StackLayout Margin="16,32,16,32"
+                             HorizontalOptions="CenterAndExpand"
+                             Orientation="Vertical">
+                    <Button x:Name="scanButton"
+                            Padding="24,16"
+                            BackgroundColor="#c8193c"
+                            CornerRadius="10"
+                            Text="START SCANNING"
+                            TextColor="White" />
+                </StackLayout>
+                <BoxView Style="{StaticResource Separator}" />
+            </StackLayout>
+            <StackLayout x:Name="resultsPreviewLayout"
+                         BackgroundColor="#d2d2d2"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand">
+                <Label Margin="16,16,16,16"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       Text="Results Preview (LIVE)"
+                       TextColor="Black" />
+                <Label x:Name="resultsLabel"
+                       Margin="16,0,16,0"
+                       FontSize="16"
+                       HorizontalTextAlignment="Start"
+                       TextColor="Black" />
+            </StackLayout>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
